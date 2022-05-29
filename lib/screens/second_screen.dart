@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class SecondScreen extends StatelessWidget {
+  
   String quoteText;
   String authorName;
 
@@ -20,8 +21,15 @@ class SecondScreen extends StatelessWidget {
               style: TextStyle(fontSize: 20)
               ),
           ),
-          Align(
-            alignment: Alignment.bottomRight, child: Text("~ $authorName",style: TextStyle(fontSize:18),)),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: Align(
+              alignment: Alignment.bottomRight, 
+              child: Text(
+                "~ $authorName",
+                style: TextStyle(fontSize:18),
+                )),
+          ),
         ]),
          ),
     );
