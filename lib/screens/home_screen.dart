@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                  MaterialPageRoute(builder: (context) => SecondScreen(
                    quoteText: quote,authorName: author,)));
               },
-             child: Text('Get Quote!'),
+            //  child: Text('Get Quote!'),
       ),
         ),
     ),
